@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<title>Batman</title>
+<meta charset="utf-8">
+<!-- This next line is how you use free fonts from Google. -->
+<link href='http://fonts.googleapis.com/css?family=Alegreya:400italic,900italic,400,900' rel='stylesheet' type='text/css'>
+<style>
+
+    /*  This is a comment. Inside <style> tags, anything between a slash+star and a star+slash is ignored.  */
+    /*  You can split up comments between multiple lines.
+        This is still a comment, because we haven't closed the comment with a star+slash.
+        End of comment about to happen riiiiight ...... now */
+
+    /* Go ahead and skip down to the <body> tag and come back to this stuff later. */
+
+    html, body {
+        font-size: 100%;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    body {
+      line-height: 1;
+    }
+
+    * {
+        /* We'll talk about this later. */
+        box-sizing: border-box;
+    }
+    body {
+        /*  This next line is a font stack.
+        Try changing it. What happens? */
+
+        font-family: "Alegreya", Helvetica;
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    section {
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        min-height: 100%;
+        position: relative;
+    }
+
+    p {
+        margin: 0 0 1em 0;
+    }
+
+    .text {
+        width: 30%;
+        min-width: 300px;
+        padding: 20px 32px;
+        border-radius: 8px;
+        color: white;
+        position: absolute;
+        box-shadow: 0 0 120px rgba(255, 255, 255, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.6);
+    }
+
+    h2 {
+        font-size: 32px;
+        font-weight: bold;
+        margin: 0 0 .8em 0;
+    }
+
+    .one {
+        /*  Nice, you found it! Alright, it's time to find an image of your character on the Internet.
+            That's not it, though. You need to save the image into the img folder inside your directory.
+            Once you do that, make sure you change the "cape.jpg" on the next line to match your file name.
+        */
+        background-image: url(img/cape.jpg);
+    }
+
+    .one .text {
+        background-color: rgba(20, 31, 36, 0.8);
+        bottom: 100px;
+        right: 100px;
+    }
+
+    .two {
+        /*  If you did the last one correctly, you should know what to do with this one. */
+        background-image: url(img/crime.jpg);
+    }
+
+    .two .text {
+        background-color: rgba(129, 143, 153, 0.8);
+        color: #00070F;
+        top: 100px;
+        left: 100px;
+    }
+
+    .three {
+        /*  Easy, right? You're practically a pro. */
+        background-image: url(img/west.jpg);
+    }
+
+    .three .text {
+        background-color: rgba(254, 222, 59, 0.8);
+        color: #141213;
+        bottom: 100px;
+        left: 100px;
+    }
+
+</style>
+</head>
+<body>
+
+<!--  In HTML, comments look like this. -->
+<!--  They can also span lines
+      Here's the next line. -->
+
+<!-- "section" is a built-in HTML tag. It tells the page to treat this next block of
+      code and text as a discrete section of content. We say class="one" so that we can
+      definie CSS rules, to style it. Find ".one" above to style this specific area.
+      -->
+
+<section class="one">
+    <div class="text">
+        <!-- OK, time to go nuts. h2 stands for Header 2. It's the second biggest headline on a page. -->
+        <!-- Change the words inside <h2></h2>. -->
+
+        <h2>My name is Batman.</h2>
+
+        <!-- p stands for paragraph. Change the words. -->
+
+        <p>Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. </p>
+    </div>
+</section>
+
+<!-- Here's the next section. Find ".two" in the CSS above to change the styles in this specific section. -->
+
+<section class="two">
+    <div class="text">
+        <!-- You probably guessed what this does. Change the h2 and p content to update the content -->
+        <h2>I like to fight crime.</h2>
+        <p>Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. </p>
+    </div>
+</section>
+
+<section class="three">
+    <div class="text">
+        <!-- Last one. Change the content here to change the content in the third section. -->
+        <h2>Don't talk to me about this guy.</h2>
+        <p>Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. </p>
+    </div>
+</section>
+
+</body>
+</html>
