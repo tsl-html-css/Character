@@ -26,6 +26,7 @@
     * {
         box-sizing: border-box;
     }
+
     body {
         font-family: "Alegreya", Helvetica;
         font-size: 20px;
@@ -41,57 +42,66 @@
         position: relative;
     }
 
-    p {
-        margin: 0 0 1em 0;
-    }
-
     .text {
-        width: 30%;
-        min-width: 300px;
-        padding: 20px 32px;
+        /* This is the ruleset for all pieces of text. */
+
+        /* The text is hard to read when it's right up against the edge of the box its in. */
+        /* Add some padding to put space on the left and right side. */
+
+        /* Also, we want this box to be just 30% of the width of the page. */
+        /* What property would we use to do that? */
+
+        /* Finally, add a 1px solid white border. */
+
         border-radius: 8px;
         color: white;
         position: absolute;
         box-shadow: 0 0 120px rgba(255, 255, 255, 0.3);
-        border: 1px solid rgba(255, 255, 255, 0.6);
     }
 
     h2 {
-        font-size: 32px;
-        font-weight: bold;
-        margin: 0 0 .8em 0;
+        /* The browser will add a margin to the top and bottom of any header tag by default. */
+        /* We don't want that. Add a margin rule so there's only 1em of margin on the bottom, and none on the other sides. */
+
+        /* Also add a rule to make the font a little bigger than it is by defualt. */
     }
 
     .one {
         background-image: url(img/cape.jpg);
     }
 
-    .one .text {
+    .one-text {
+        /* This is the text for the first slide. */
+        /* Let's put 100px of margin on just the right side, so it doesn't rub up against the edge of the screen. */
+
         background-color: rgba(20, 31, 36, 0.8);
         bottom: 100px;
-        right: 100px;
     }
 
     .two {
         background-image: url(img/crime.jpg);
     }
 
-    .two .text {
+    .two-text {
+        /* This is the text on the second slide. */
+        /* It would be better black, not white. Add a color rule here for that. */
+        /* Also, put 100px of margin on just the left side, so it doesn't rub up against the edge of the screen. */
+
         background-color: rgba(129, 143, 153, 0.8);
-        color: #00070F;
         top: 100px;
-        left: 100px;
     }
 
     .three {
         background-image: url(img/west.jpg);
     }
 
-    .three .text {
+    .three-text {
+        /* This is the text on the third slide. */
+        /* This text doesn't work in white either. Pick a different color to use here. */
+        /* Also, like .two-text, put 100px of margin on the left side. */
+
         background-color: rgba(254, 222, 59, 0.8);
-        color: #141213;
         bottom: 100px;
-        left: 100px;
     }
 
 </style>
@@ -99,20 +109,20 @@
 <body>
 
 <section class="one">
-    <div class="text">
+    <div class="text one-text">
         <h2>My name is Batman.</h2>
         <p>Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. </p>
     </div>
 </section>
 <section class="two">
-    <div class="text">
+    <div class="text two-text">
         <h2>I like to fight crime.</h2>
         <p>Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. </p>
     </div>
 </section>
 
 <section class="three">
-    <div class="text">
+    <div class="text three-text">
         <h2>Don't talk to me about this guy.</h2>
         <p>Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. </p>
     </div>
